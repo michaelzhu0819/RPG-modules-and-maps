@@ -69,7 +69,7 @@ while True:
     # loops and ask for input until you type quit which will return to the
     # general menu
     if cata_input.lower() == general_action[0]:
-        mapping.Map()
+        mapping.Map()  # prints out the map
         time.sleep(1)
         if choice > 0:
             print(f"you are playing as {characters[choice-1]}")
@@ -128,7 +128,7 @@ while True:
                 print("\n" + combat_input.lower() + "!\n")
 
                 # Shows you all the accessories in the combat inventory and
-                # lets you choose one of them and use it"""
+                # lets you choose one of them and use it
                 if combat_input.lower() == combat[0]:
                     combat_pouch = inventory.combat_inv(combat_pouch)
                     print("You have:\n")
